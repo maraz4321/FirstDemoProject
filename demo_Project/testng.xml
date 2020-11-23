@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="Util.TestNGListener"/>
+</listeners>
+  <test thread-count="5" name="TestDemo_V_1">
+    <classes>
+      <class name="demo_Project.test.SignInPageTest"/>
+      <class name="demo_Project.test.UserPageTest"/>
+      <class name="demo_Project.test.CommerceAreaPageTest"/>
+      <!--  class name="demo_Project.test.ProspectionAreaPageTest"--><!-- extra don't use -->
+      <class name="demo_Project.test.NewCommercialProposalPageTest"/>
+      <class name="demo_Project.test.ListOfCommercialProposalsPageTest"/>
+      <class name="demo_Project.test.NotesForCProposalPageTest"/>
+      <class name="demo_Project.test.NewSalesOrdersPageTest"/>
+      <class name="demo_Project.test.ListOfSalesOrderTest"/>
+      <class name="demo_Project.test.NotesOfSalesOrderPageTest"/>
+      <class name="demo_Project.test.NewPriceRequestVendorPageTest"/>
+      <class name="demo_Project.test.ListOfVendorProposalRequestsTest"/>
+    </classes>
+  </test> <!-- TestDemo_V_1 -->
+</suite> <!-- Suite -->

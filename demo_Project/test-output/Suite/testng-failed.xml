@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Util.TestNGListener"/>
+  </listeners>
+  <test name="TestDemo_V_1(failed)">
+    <classes>
+      <class name="demo_Project.test.ListOfVendorProposalRequestsTest">
+        <methods>
+          <include name="testListOfVendorProposalRequestPage" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- demo_Project.test.ListOfVendorProposalRequestsTest -->
+      <class name="demo_Project.test.SignInPageTest">
+        <methods>
+          <include name="setURL"/>
+        </methods>
+      </class> <!-- demo_Project.test.SignInPageTest -->
+    </classes>
+  </test> <!-- TestDemo_V_1(failed) -->
+</suite> <!-- Failed suite [Suite] -->

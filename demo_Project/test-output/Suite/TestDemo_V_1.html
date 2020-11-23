@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>TestNG:  TestDemo_V_1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>TestDemo_V_1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Nov 21 10:49:01 EST 2020</td>
+</tr>
+<tr><td>Total time:</td><td>44 seconds (44042 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='demo_Project.test.CommerceAreaPageTest.clkCommercialProposals()'><b>clkCommercialProposals</b><br>Test class: demo_Project.test.CommerceAreaPageTest</td>
+<td></td>
+<td>1</td>
+<td>demo_Project.test.CommerceAreaPageTest@691a7f8f</td></tr>
+<tr>
+<td title='demo_Project.test.SignInPageTest.signInPageTest()'><b>signInPageTest</b><br>Test class: demo_Project.test.SignInPageTest<br>Parameters: demo, demo, David</td>
+<td></td>
+<td>4</td>
+<td>demo_Project.test.SignInPageTest@16aa0a0a</td></tr>
+<tr>
+<td title='demo_Project.test.NotesForCProposalPageTest.testForNotesOfCProposalpage()'><b>testForNotesOfCProposalpage</b><br>Test class: demo_Project.test.NotesForCProposalPageTest<br>Parameters: MMH001, 001 ethan, Oct, 2018, 5, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, Oct, 2018, 21, 8455748 - Project 4, US Dollars ($), My first Proposal, Note should be draft, PROV789</td>
+<td></td>
+<td>0</td>
+<td>demo_Project.test.NotesForCProposalPageTest@17c1bced</td></tr>
+<tr>
+<td title='demo_Project.test.ListOfCommercialProposalsPageTest.testListOfCommercialProposalpage()'><b>testListOfCommercialProposalpage</b><br>Test class: demo_Project.test.ListOfCommercialProposalsPageTest<br>Parameters: MMH001, 001 ethan, Oct, 2018, 15, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, Oct, 2020, 20, 8455748 - Project 4, US Dollars ($), My first Proposal, Note should be draft, PROV789</td>
+<td></td>
+<td>0</td>
+<td>demo_Project.test.ListOfCommercialProposalsPageTest@161b062a</td></tr>
+<tr>
+<td title='demo_Project.test.ListOfSalesOrderTest.testListOfSalesOrdersPage()'><b>testListOfSalesOrdersPage</b><br>Test class: demo_Project.test.ListOfSalesOrderTest<br>Parameters: MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, Internet, 8455748, Project 4 - carlos laserna delgado (cld), Duty Free, US Dollars ($), Finish in time, Do not dely, PROV1084</td>
+<td></td>
+<td>4</td>
+<td>demo_Project.test.ListOfSalesOrderTest@4034c28c</td></tr>
+<tr>
+<td title='demo_Project.test.ListOfVendorProposalRequestsTest.testListOfVendorProposalRequestPage()'><b>testListOfVendorProposalRequestPage</b><br>Test class: demo_Project.test.ListOfVendorProposalRequestsTest<br>Parameters: ALG, 60 days of month-end, Debit payment order, Transporter, Mar, 2018, 25, aurore, PJ2010-7634, BILLY, Euros (€), PROV167</td>
+<td></td>
+<td>4</td>
+<td>demo_Project.test.ListOfVendorProposalRequestsTest@53ca01a2</td></tr>
+<tr>
+<td title='demo_Project.test.NewPriceRequestVendorPageTest.testNewPriceRequest()'><b>testNewPriceRequest</b><br>Test class: demo_Project.test.NewPriceRequestVendorPageTest<br>Parameters: ALG, 60 days of month-end, Debit payment order, Transporter, Mar, 2018, 25, aurore, PJ2010-7634, BILLY, Euros (€), PROV167</td>
+<td></td>
+<td>5</td>
+<td>demo_Project.test.NewPriceRequestVendorPageTest@14ec4505</td></tr>
+<tr>
+<td title='demo_Project.test.NewCommercialProposalPageTest.testNewProposalPage()'><b>testNewProposalPage</b><br>Test class: demo_Project.test.NewCommercialProposalPageTest<br>Parameters: MMH001, ALTO, Oct, 2018, 15, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, Oct, 2020, 20, 8455748, Project 4 - carlos laserna delgado (cld), US Dollars ($), My first Proposal, Note should be draft, PROV789</td>
+<td></td>
+<td>8</td>
+<td>demo_Project.test.NewCommercialProposalPageTest@50a7bc6e</td></tr>
+<tr>
+<td title='demo_Project.test.NewSalesOrdersPageTest.testNewSalesOrdersPage()'><b>testNewSalesOrdersPage</b><br>Test class: demo_Project.test.NewSalesOrdersPageTest<br>Parameters: MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, Internet, 8455748, Project 4 - carlos laserna delgado (cld), Duty Free, US Dollars ($), Finish in time, Do not dely, PROV1084</td>
+<td></td>
+<td>4</td>
+<td>demo_Project.test.NewSalesOrdersPageTest@2d9d4f9d</td></tr>
+<tr>
+<td title='demo_Project.test.NotesOfSalesOrderPageTest.testNotesOfSalesOrdersPage()'><b>testNotesOfSalesOrdersPage</b><br>Test class: demo_Project.test.NotesOfSalesOrderPageTest<br>Parameters: MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, Internet, 8455748, Project 4 - carlos laserna delgado (cld), Duty Free, US Dollars ($), Finish in time, Do not dely, PROV1084</td>
+<td></td>
+<td>0</td>
+<td>demo_Project.test.NotesOfSalesOrderPageTest@e50a6f6</td></tr>
+<tr>
+<td title='demo_Project.test.UserPageTest.userPage()'><b>userPage</b><br>Test class: demo_Project.test.UserPageTest</td>
+<td></td>
+<td>0</td>
+<td>demo_Project.test.UserPageTest@780cb77</td></tr>
+</table><p>
+</body>
+</html>

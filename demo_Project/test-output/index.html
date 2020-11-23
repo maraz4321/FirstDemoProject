@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-passed">Suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
+                    <span>C:\Java_project\demo_Project\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods,   11 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="demo_Project.test.CommerceAreaPageTest" hash-for-method="clkCommercialProposals">clkCommercialProposals</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="demo_Project.test.SignInPageTest" hash-for-method="signInPageTest(demo, demo, David)">signInPageTest(demo, demo, David)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="demo_Project.test.NotesForCProposalPageTest" hash-for-method="testForNotesOfCProposalpage(MMH001, 001 ethan, Oct, 2018, 5, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, ...)">testForNotesOfCProposalpage(MMH001, 001 ethan, Oct, 2018, 5, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="demo_Project.test.ListOfCommercialProposalsPageTest" hash-for-method="testListOfCommercialProposalpage(MMH001, 001 ethan, Oct, 2018, 15, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter,...)">testListOfCommercialProposalpage(MMH001, 001 ethan, Oct, 2018, 15, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="demo_Project.test.ListOfSalesOrderTest" hash-for-method="testListOfSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...)">testListOfSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="demo_Project.test.ListOfVendorProposalRequestsTest" hash-for-method="testListOfVendorProposalRequestPage(ALG, 60 days of month-end, Debit payment order, Transporter, Mar, 2018, 25, aurore, PJ2010-7634, BIL...)">testListOfVendorProposalRequestPage(ALG, 60 days of month-end, Debit payment order, Transporter, Mar, 2018, 25, aurore, PJ2010-7634, BIL...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="demo_Project.test.NewPriceRequestVendorPageTest" hash-for-method="testNewPriceRequest(ALG, 60 days of month-end, Debit payment order, Transporter, Mar, 2018, 25, aurore, PJ2010-7634, BIL...)">testNewPriceRequest(ALG, 60 days of month-end, Debit payment order, Transporter, Mar, 2018, 25, aurore, PJ2010-7634, BIL...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="demo_Project.test.NewCommercialProposalPageTest" hash-for-method="testNewProposalPage(MMH001, ALTO, Oct, 2018, 15, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, Oct,...)">testNewProposalPage(MMH001, ALTO, Oct, 2018, 15, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, Oct,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="demo_Project.test.NewSalesOrdersPageTest" hash-for-method="testNewSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...)">testNewSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="demo_Project.test.NotesOfSalesOrderPageTest" hash-for-method="testNotesOfSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...)">testNotesOfSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="demo_Project.test.UserPageTest" hash-for-method="userPage">userPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo_Project.test.NewCommercialProposalPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewProposalPage(MMH001, ALTO, Oct, 2018, 15, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, Oct,...)">
+                  </a> <!-- testNewProposalPage(MMH001, ALTO, Oct, 2018, 15, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, Oct,...) -->
+                  <span class="method-name">testNewProposalPage</span>
+                  <span class="parameters">(MMH001, ALTO, Oct, 2018, 15, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, Oct, 2020, 20, 8455748, Project 4 - carlos laserna delgado (cld), US Dollars ($), My first Proposal, Note should be draft, PROV789)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo_Project.test.ListOfVendorProposalRequestsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testListOfVendorProposalRequestPage(ALG, 60 days of month-end, Debit payment order, Transporter, Mar, 2018, 25, aurore, PJ2010-7634, BIL...)">
+                  </a> <!-- testListOfVendorProposalRequestPage(ALG, 60 days of month-end, Debit payment order, Transporter, Mar, 2018, 25, aurore, PJ2010-7634, BIL...) -->
+                  <span class="method-name">testListOfVendorProposalRequestPage</span>
+                  <span class="parameters">(ALG, 60 days of month-end, Debit payment order, Transporter, Mar, 2018, 25, aurore, PJ2010-7634, BILLY, Euros (€), PROV167)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo_Project.test.SignInPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signInPageTest(demo, demo, David)">
+                  </a> <!-- signInPageTest(demo, demo, David) -->
+                  <span class="method-name">signInPageTest</span>
+                  <span class="parameters">(demo, demo, David)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo_Project.test.NewPriceRequestVendorPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewPriceRequest(ALG, 60 days of month-end, Debit payment order, Transporter, Mar, 2018, 25, aurore, PJ2010-7634, BIL...)">
+                  </a> <!-- testNewPriceRequest(ALG, 60 days of month-end, Debit payment order, Transporter, Mar, 2018, 25, aurore, PJ2010-7634, BIL...) -->
+                  <span class="method-name">testNewPriceRequest</span>
+                  <span class="parameters">(ALG, 60 days of month-end, Debit payment order, Transporter, Mar, 2018, 25, aurore, PJ2010-7634, BILLY, Euros (€), PROV167)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo_Project.test.ListOfSalesOrderTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testListOfSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...)">
+                  </a> <!-- testListOfSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...) -->
+                  <span class="method-name">testListOfSalesOrdersPage</span>
+                  <span class="parameters">(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, Internet, 8455748, Project 4 - carlos laserna delgado (cld), Duty Free, US Dollars ($), Finish in time, Do not dely, PROV1084)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo_Project.test.UserPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="userPage">
+                  </a> <!-- userPage -->
+                  <span class="method-name">userPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo_Project.test.ListOfCommercialProposalsPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testListOfCommercialProposalpage(MMH001, 001 ethan, Oct, 2018, 15, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter,...)">
+                  </a> <!-- testListOfCommercialProposalpage(MMH001, 001 ethan, Oct, 2018, 15, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter,...) -->
+                  <span class="method-name">testListOfCommercialProposalpage</span>
+                  <span class="parameters">(MMH001, 001 ethan, Oct, 2018, 15, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, Oct, 2020, 20, 8455748 - Project 4, US Dollars ($), My first Proposal, Note should be draft, PROV789)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo_Project.test.CommerceAreaPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clkCommercialProposals">
+                  </a> <!-- clkCommercialProposals -->
+                  <span class="method-name">clkCommercialProposals</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo_Project.test.NewSalesOrdersPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNewSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...)">
+                  </a> <!-- testNewSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...) -->
+                  <span class="method-name">testNewSalesOrdersPage</span>
+                  <span class="parameters">(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, Internet, 8455748, Project 4 - carlos laserna delgado (cld), Duty Free, US Dollars ($), Finish in time, Do not dely, PROV1084)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo_Project.test.NotesForCProposalPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForNotesOfCProposalpage(MMH001, 001 ethan, Oct, 2018, 5, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, ...)">
+                  </a> <!-- testForNotesOfCProposalpage(MMH001, 001 ethan, Oct, 2018, 5, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, ...) -->
+                  <span class="method-name">testForNotesOfCProposalpage</span>
+                  <span class="parameters">(MMH001, 001 ethan, Oct, 2018, 5, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, Oct, 2018, 21, 8455748 - Project 4, US Dollars ($), My first Proposal, Note should be draft, PROV789)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">demo_Project.test.NotesOfSalesOrderPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testNotesOfSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...)">
+                  </a> <!-- testNotesOfSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...) -->
+                  <span class="method-name">testNotesOfSalesOrdersPage</span>
+                  <span class="parameters">(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, Internet, 8455748, Project 4 - carlos laserna delgado (cld), Duty Free, US Dollars ($), Finish in time, Do not dely, PROV1084)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Java_project\demo_Project\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;Util.TestNGListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;TestDemo_V_1&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;demo_Project.test.SignInPageTest&quot;/&gt;
+      &lt;class name=&quot;demo_Project.test.UserPageTest&quot;/&gt;
+      &lt;class name=&quot;demo_Project.test.CommerceAreaPageTest&quot;/&gt;
+      &lt;class name=&quot;demo_Project.test.NewCommercialProposalPageTest&quot;/&gt;
+      &lt;class name=&quot;demo_Project.test.ListOfCommercialProposalsPageTest&quot;/&gt;
+      &lt;class name=&quot;demo_Project.test.NotesForCProposalPageTest&quot;/&gt;
+      &lt;class name=&quot;demo_Project.test.NewSalesOrdersPageTest&quot;/&gt;
+      &lt;class name=&quot;demo_Project.test.ListOfSalesOrderTest&quot;/&gt;
+      &lt;class name=&quot;demo_Project.test.NotesOfSalesOrderPageTest&quot;/&gt;
+      &lt;class name=&quot;demo_Project.test.NewPriceRequestVendorPageTest&quot;/&gt;
+      &lt;class name=&quot;demo_Project.test.ListOfVendorProposalRequestsTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestDemo_V_1 --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">TestDemo_V_1 (11 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testNewProposalPage')
+data.setCell(0, 2, 'demo_Project.test.NewCommercialProposalPageTest')
+data.setCell(0, 3, 8890);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testNewPriceRequest')
+data.setCell(1, 2, 'demo_Project.test.NewPriceRequestVendorPageTest')
+data.setCell(1, 3, 5289);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testListOfSalesOrdersPage')
+data.setCell(2, 2, 'demo_Project.test.ListOfSalesOrderTest')
+data.setCell(2, 3, 4740);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testListOfVendorProposalRequestPage')
+data.setCell(3, 2, 'demo_Project.test.ListOfVendorProposalRequestsTest')
+data.setCell(3, 3, 4536);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testNewSalesOrdersPage')
+data.setCell(4, 2, 'demo_Project.test.NewSalesOrdersPageTest')
+data.setCell(4, 3, 4400);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'signInPageTest')
+data.setCell(5, 2, 'demo_Project.test.SignInPageTest')
+data.setCell(5, 3, 4114);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'clkCommercialProposals')
+data.setCell(6, 2, 'demo_Project.test.CommerceAreaPageTest')
+data.setCell(6, 3, 1538);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testNotesOfSalesOrdersPage')
+data.setCell(7, 2, 'demo_Project.test.NotesOfSalesOrderPageTest')
+data.setCell(7, 3, 774);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testForNotesOfCProposalpage')
+data.setCell(8, 2, 'demo_Project.test.NotesForCProposalPageTest')
+data.setCell(8, 3, 640);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testListOfCommercialProposalpage')
+data.setCell(9, 2, 'demo_Project.test.ListOfCommercialProposalsPageTest')
+data.setCell(9, 3, 533);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'userPage')
+data.setCell(10, 2, 'demo_Project.test.UserPageTest')
+data.setCell(10, 3, 503);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 35 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">10 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">demo_Project.test.NewCommercialProposalPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setURL</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">demo_Project.test.ListOfVendorProposalRequestsTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setURL</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">demo_Project.test.NewPriceRequestVendorPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setURL</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">demo_Project.test.UserPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setURL</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">demo_Project.test.ListOfSalesOrderTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setURL</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">demo_Project.test.CommerceAreaPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setURL</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">demo_Project.test.ListOfCommercialProposalsPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setURL</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">demo_Project.test.NotesForCProposalPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setURL</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">demo_Project.test.NewSalesOrdersPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setURL</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">demo_Project.test.NotesOfSalesOrderPageTest</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setURL</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo_Project.test.SignInPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setURL</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="test-method">
+                <span class="method-name">signInPageTest(demo, demo, David)</span>
+                <span class="method-start">7498 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo_Project.test.UserPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">userPage</span>
+                <span class="method-start">12197 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo_Project.test.CommerceAreaPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">clkCommercialProposals</span>
+                <span class="method-start">13039 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo_Project.test.NewCommercialProposalPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testNewProposalPage(MMH001, ALTO, Oct, 2018, 15, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, Oct,...)</span>
+                <span class="method-start">15103 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo_Project.test.ListOfCommercialProposalsPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testListOfCommercialProposalpage(MMH001, 001 ethan, Oct, 2018, 15, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter,...)</span>
+                <span class="method-start">24379 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo_Project.test.NotesForCProposalPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testForNotesOfCProposalpage(MMH001, 001 ethan, Oct, 2018, 5, 10, 60 days, Credit card, Commercial contact, 1 week, Transporter, ...)</span>
+                <span class="method-start">25297 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo_Project.test.NewSalesOrdersPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testNewSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...)</span>
+                <span class="method-start">26299 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo_Project.test.ListOfSalesOrderTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testListOfSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...)</span>
+                <span class="method-start">31110 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo_Project.test.NotesOfSalesOrderPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testNotesOfSalesOrdersPage(MMH001Sales, ALTO, Feb, 2019, 28, Nov, 2020, 30, Due Upon Receipt, Bank transfer, Immediate, Catch, ...)</span>
+                <span class="method-start">36242 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo_Project.test.NewPriceRequestVendorPageTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testNewPriceRequest(ALG, 60 days of month-end, Debit payment order, Transporter, Mar, 2018, 25, aurore, PJ2010-7634, BIL...)</span>
+                <span class="method-start">37388 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">demo_Project.test.ListOfVendorProposalRequestsTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testListOfVendorProposalRequestPage(ALG, 60 days of month-end, Debit payment order, Transporter, Mar, 2018, 25, aurore, PJ2010-7634, BIL...)</span>
+                <span class="method-start">45992 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
